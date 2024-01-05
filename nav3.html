@@ -1,0 +1,185 @@
+<div class="navbar" style="display:flex;"  >
+    <div class="flex:1" style="padding:0.5%;">
+    
+        <img style="background-color: black;width:70px;height:auto;border-radius:50%;"src="/Images/logo/logo.svg" >
+    </div> 
+   <nav class="hambur"  style="flex:2;margin:2%; ">
+     <div class="mobile" style="background-color:none;justify-content: end; ">
+        
+     <button style="background-color: inherit;" id="hamburg"  class="hamburg"><i class="fa-solid fa-bars fa-xl" style="color: black"></i></button>
+ </div>
+    <div id="nav-list"class="nav-list" style="border-radius: 9px;position:absolute;z-index: 200; ">
+     
+     
+     <a   class="nav-items" href="./" >Pocetna</a>
+      <a  class="nav-items" href="services " >Usluge</a>   
+     <a  class="nav-items"href="prices" >Cene</a>
+     <a  class="nav-items" href="gallery" >Galerija</a>
+     <a  class="nav-items" href="contact"  >Kontakt</a>
+     </div>
+ </nav>
+ 
+ 
+ 
+ 
+      </div>
+      
+
+ <script>
+ 
+ const hamburger=document.getElementById('hamburg');
+ menu=document.getElementById('nav-list');
+
+ function myFunction(x) {
+  if (x.matches) { 
+     
+    menu.style.display='none';  
+ 
+ hamburger.addEventListener('click',function(){
+    
+     
+     if(menu.style.display=='none'){
+     
+         menu.style.display='block';
+    
+    }
+    else{
+    
+         menu.style.display='none';
+     
+    }
+
+   })
+
+  }
+else{
+    menu.style.display='flex';  
+}
+
+}
+
+// Create a MediaQueryList object
+var x = window.matchMedia("(max-width: 620px)")
+
+// Call listener function at run time
+myFunction(x);
+
+// Attach listener function on state changes
+x.addEventListener("change", function() {
+  myFunction(x);
+});
+
+ </script>
+ 
+ 
+ <style>
+
+.navbar {
+  overflow: hidden;
+  background-color: #cfc6c6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  position:relative;
+  width:100%;
+  height: 650px;
+
+  }
+
+  .navbar a,.navbar h4 {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  }
+
+
+ .navbar a:hover {
+    background-color:orange;
+    border-radius: 15px;
+  }
+  
+ button {
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+ .nav-list{
+    /* font-family:'SimSun'; */
+     list-style: none;
+     display: flex;
+    background-image: inherit;
+     margin:0px;
+     padding:2px;
+     color:white;
+     /* height: inherit; */
+ }
+ .nav-items{
+     color:white;
+    /* display: inline-flex; */
+     margin:5px;
+     font-size: 20px !important;
+     
+ }
+ 
+ .mobile {
+     display: none;
+ }
+ 
+ @media only screen and (max-width: 620px){
+
+    
+     .mobile{
+         display:flex;
+         
+     }
+     .nav-list{
+         display: none;
+         width:100%;
+         height:fit-content; 
+        /* top:80px; */
+         left:0;
+         bottom:0;
+         text-align:left;
+         background-color: black;
+     }
+
+      .hamburg:hover .nav-list {
+         
+         display:block;
+         
+     
+     }
+     .nav-items{
+        
+        font-size: 15px !important;
+     }
+
+     .navbar{
+   background-size: cover;
+   height:350px;
+     }
+ 
+}
+   
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none !important;
+   display:block;
+  text-align: center;
+  }
+
+ 
+}
+ </style>
+
+ 

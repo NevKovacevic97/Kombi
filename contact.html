@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  
+    <link rel="stylesheet" type="text/css" href="/Pages/css/contactstyle.css">
+
+
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("cy4GqJ3RokxbBWMh2");
+   })();
+</script>
+
+
+
+    <title>Contact</title>
+</head>
+<body>
+
+   <!--  NAVBAR      -->
+<div style="position: relative;">
+  <div id="navbar" >
+ </div>
+ 
+ <div class="navbar-text" style="position:absolute;z-index: 100;
+ top: 50%;
+ left: 50%;
+ transform:translate(-50%,-50%)"
+ >
+
+  <h1 > KONTAKT </h1>
+  
+ </div>
+ </div>
+ 
+ 
+  <!--  FIRST SECTION      -->
+ 
+  <div class="row width middle" >
+   
+  
+    <div class="col-ph-12 col-s-4" >
+        <div class="left">
+
+      <div >   <h1 style="text-align:left;color:black;text-shadow: 1px 1px 2px white ">KONTAKT INFORMACIJE</h1>  </div>
+      <div class="info">
+       
+        <i class="fa-solid fa-location-dot fa-2xl" style="color: #1d67a8;;"></i>
+      <h4>Kragujevac, Srbija </h4>
+    </div>
+      <div class="info">
+        <i class="fa-solid fa-phone fa-2xl" style="color: #1d67a8;;"></i>
+       <h4> <a onclick="window.open('tel:+381693743088')" style="cursor: pointer;"  >+381693743088</a> </h4>
+    </div>
+    <div class="info">
+      <i class="fa-solid fa-envelope fa-2xl" style="color: #1d67a8;;"></i>
+    <h4> <a onclick="window.open('mailto:imperiatransportsrb@gmail.com?')" style="cursor: pointer;"  >imperiatransportsrb@gmail.com </a> </h4>
+  </div>
+  
+<div class="info">
+  <i class="fa-brands fa-viber fa-2xl" style="color: #1d67a8;;"></i>
+<h4><a href="viber://chat?number=0693743088">Viber</a> </h4> 
+</div>
+<div class="info">
+  <i class="fa-brands fa-whatsapp fa-2xl" style="color: #1d67a8;;"></i>
+<h4><a href="https://api.whatsapp.com/send?phone=0693743088" >WhatsApp</a> </h4>
+</div>
+<div class="info">
+  <i class="fa-brands fa-facebook fa-2xl" style="color: #1d67a8;;"></i>
+<h4> <a href="https://www.facebook.com/prevoznik.imperia?mibextid=ZbWKwL" >Facebook</a> </h4>
+</div>
+<div class="info">
+  <i class="fa-brands fa-instagram fa-2xl" style="color: #1d67a8;;"></i>
+<h4> <a href="https://www.instagram.com/kombiprevoznik/" >Instagram</a> </h4>
+</div>
+<div class="info">
+  <i class="fa-regular fa-clock fa-2xl" style="color: #1d67a8;;"></i>
+<h4>00-24 </h4>
+</div>
+
+
+
+     
+      </div>
+
+      
+    </div>
+  
+    <div class="col-ph-12 col-s-8" >
+       
+       <div class="center">
+
+        <div class="header" style="width:100% !important; overflow: hidden;">
+          <button style="float:right;" onclick="window.open('tel:+381693743088')" >POZOVITE ODMAH</button>
+        </div>
+        <form>
+            <h1 style="text-align:left;color:black;text-shadow: 1px 1px 2px white; ">POSALJITE PORUKU</h1>
+            <input type="text" placeholder="Name" id="name" required>
+            <input type="email" placeholder="Email" id="email" required>
+            <input type="text" placeholder="Subject" id="subject" required>
+            <textarea id="message" placeholder="message" cols="30" rows="10"></textarea>
+            <button type="submit" onclick="sendMail()">POSALJI</button>
+
+  
+
+        </form>
+
+       </div>
+    </div>
+  </div>
+
+  <!--  THIRD SECTION       -->
+ 
+  <div id="footer">
+
+  </div>
+
+<script>
+      $(function(){
+  $("#navbar").load("/Pages/nav3.html");
+  $("#footer").load("/Pages/footer.html");
+});
+  function sendMail(){
+
+    let parms=
+  {
+    name:document.getElementById("name").value,
+    email:document.getElementById("email").value,
+    subject:document.getElementById("subject").value,
+    message:document.getElementById("message").value,
+
+
+  }
+  emailjs.send("service_so1xyig","template_l195g9g",parms).then(alert("Email sent!"))
+  }
+
+
+</script>
+
+</body>
+</html>
