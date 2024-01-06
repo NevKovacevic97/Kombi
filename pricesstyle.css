@@ -12,8 +12,8 @@ html,body {
  background-position:left 20% !important;
 }
 .navbar-text h1{
-  text-align:center;color:white;text-shadow: 1px 1px 1px white;font-size: 5vw !important;font-family: "Bebas Neue", Sans-serif;letter-spacing: 20px; 
-  animation: slidein 7s ;
+  text-align:center;color:white;font-size: 5vw !important;font-family: "Bebas Neue", Sans-serif;letter-spacing: 20px; 
+  animation: slidein 5s ;
 }
 @keyframes slidein {
   0% { margin-left:-5000px; }

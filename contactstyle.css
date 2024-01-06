@@ -13,8 +13,8 @@ html,body {
 
   }
   .navbar-text h1{
-    text-align:center;color:white;text-shadow: 1px 1px 1px white;font-size:5vw !important;font-family: "Bebas Neue", Sans-serif;letter-spacing: 20px; 
-    animation: slidein 7s ;
+    text-align:center;color:white;font-size:5vw !important;font-family: "Bebas Neue", Sans-serif;letter-spacing: 20px; 
+    animation: slidein 5s ;
   }
  
 
@@ -44,14 +44,20 @@ form{
 
 input, textarea{
   display:block;
-    width:100%;
+    width:65%;
     padding:6px;
     outline:none;
     border:none;
     margin:6px 0px;
     border-radius: 10px;
 }
-
+@media only screen and (max-width : 480px) {
+  input, textarea{
+    
+      width:100%;
+     
+  }
+}
 button {
     background-color: #1d67a8;
     border: none;
@@ -122,6 +128,7 @@ button {
     margin:auto;
      width:95%;
   }
+
 }
 
 
