@@ -12,7 +12,7 @@ html,body {
 
   }
   .navbar-text h1{
-    text-align:center;color:white;font-size: 5vw !important;font-family: "Bebas Neue", Sans-serif;letter-spacing: 20px; 
+    text-align:center;color:white;font-size: 7vw !important;font-family: "Bebas Neue", Sans-serif;letter-spacing: 20px; 
     animation: slidein 5s ;
   }
   @keyframes slidein {
@@ -28,6 +28,7 @@ html,body {
 
   div.gallery {
     border: 1px solid #ccc;
+    padding:2%;
   }
   
   div.gallery:hover {
