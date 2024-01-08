@@ -104,15 +104,17 @@ html,body {
     }
   }
   
-  @media all and (orientation:landscape) { 
+  @media screen and (orientation:landscape) { 
     #FullView{
       width:50%;
      vertical-align: middle;
    object-fit: cover;
     object-position: center;
    aspect-ratio: 3/1; 
+   
     }
   
+    
 
 
   }
