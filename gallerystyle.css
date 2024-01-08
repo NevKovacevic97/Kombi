@@ -94,7 +94,7 @@ html,body {
       flex: 50%;
       max-width: 50%;
     }
-
+/*
     #FullView{
       width:80%;
      vertical-align: middle;
@@ -102,20 +102,22 @@ html,body {
     object-position: center;
     aspect-ratio: 1/1;
     }
+    */
   }
+  
   @media screen and  (orientation:landscape)
   {
     .modal-content{
-      width: 70% !important;
+      width: 50vw !important;
+      height:50vh !important;
+      vertical-align: middle;
+      object-fit: cover;
+      object-position: center;
       aspect-ratio: 1/1;
-    }
-    #FullView{
      
-     vertical-align: middle;
-    object-fit: cover;
-    object-position: center;
-      aspect-ratio: 1/1;
     }
+   
+    
   }
   /*
   @media screen and (orientation:landscape) { 
