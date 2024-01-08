@@ -105,6 +105,9 @@ html,body {
   }
   @media screen and  (orientation:landscape)
   {
+    .modal-content{
+      width: 50%;
+    }
     #FullView{
       width:50% !important;
      vertical-align: middle;
