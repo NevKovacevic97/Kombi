@@ -88,53 +88,32 @@ html,body {
   }
 
   
+  #FullView{
+
+    width:70%;
+    aspect-ratio: 1/1;
+  }
+
   @media screen and (max-width: 1025px) {
     .column {
       -ms-flex: 50%;
       flex: 50%;
       max-width: 50%;
     }
-/*
-    #FullView{
-      width:80%;
-     vertical-align: middle;
-    object-fit: cover;
-    object-position: center;
-    aspect-ratio: 1/1;
-    }
-    */
-  }
-  
-  @media screen and  (orientation:landscape)
-  {
-    .modal-content{
-      width: 50vw !important;
-      height:50vh !important;
-      vertical-align: middle;
-      object-fit: cover;
-      object-position: center;
-      aspect-ratio: 1/1;
-     
-    }
-   
+
+    
     
   }
-  /*
+
+
   @media screen and (orientation:landscape) { 
     #FullView{
       width:50%;
-     vertical-align: middle;
-   object-fit: cover;
-    object-position: center;
-   aspect-ratio: 3/1; 
+      aspect-ratio: 1/0.9; 
    
     }
+    }
   
-   
-
-
-  }
-  /*
 
   @media only screen and (max-width: 480px){
     .navbar{
@@ -151,9 +130,6 @@ html,body {
       max-width: 100%;
     }
 
-    #FullView{
-      width:80%;aspect-ratio: 1/1;
-    }
   }
 
 
@@ -168,7 +144,7 @@ html,body {
 }
 /* FullView */
 #FullView {
-  margin: 0px auto 20px;
+  margin: 0px auto 0px;
   display: block;
   border-radius: 10px;
   border: 10px solid #f9f9f9;
@@ -197,12 +173,7 @@ html,body {
   background-color: rgba(0,0,0,0.7);
   
 }
-.modal-content{
-  margin:auto;
-  width:50%;
- 
-  
-}
+
 #caption {
   text-align: center;
   color: #fff;
@@ -229,7 +200,7 @@ html,body {
 }
 .modal-content{
   margin:auto;
-  width:50%;
+  width:100%;
   position: absolute;
   top: 50%;
   transform: translate(-50%,-50%);
@@ -263,18 +234,7 @@ html,body {
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
 
-  .modal-content{
-    
-    width:90%;
-   
-    
-    
-  }
 
-  #FullView{
-    width:80%;aspect-ratio: 1/1;
-  }
-  
 }
 
 @media only screen and (min-width: 1025px) {
@@ -291,18 +251,6 @@ html,body {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 
-  .modal-content{
-    
-    width:50%;
-   
-    
-    
-  }
-
-  #FullView{
-    width:80%;aspect-ratio: 1/1;
-  }
- 
 }
 
 
