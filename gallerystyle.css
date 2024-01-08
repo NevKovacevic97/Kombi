@@ -109,7 +109,7 @@ html,body {
       width: 50% !important;
     }
     #FullView{
-      width:50% !important;
+     
      vertical-align: middle;
     object-fit: cover;
     object-position: center;
