@@ -107,6 +107,7 @@ html,body {
   {
     .modal-content{
       width: 70% !important;
+      aspect-ratio: 1/1;
     }
     #FullView{
      
