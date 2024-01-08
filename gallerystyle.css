@@ -100,10 +100,24 @@ html,body {
      vertical-align: middle;
    object-fit: cover;
     object-position: center;
-    aspect-ratio: 1/1;
+   aspect-ratio: 1/1; 
     }
   }
   
+  @media all and (orientation:landscape) { 
+    #FullView{
+      width:50%;
+     vertical-align: middle;
+   object-fit: cover;
+    object-position: center;
+   aspect-ratio: 1/1; 
+    }
+
+
+  }
+
+
+
   @media only screen and (max-width: 480px){
     .navbar{
    background-size: cover;
