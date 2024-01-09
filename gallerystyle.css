@@ -124,7 +124,7 @@ html,body {
 
   
 }
-
+/*
 @media screen and (orientation:landscape) { 
   #FullView{
     height:75vmin;
@@ -133,6 +133,7 @@ html,body {
   
   }
   }
+*/
 
   @media only screen and (max-width: 480px){
     .navbar{
