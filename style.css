@@ -15,7 +15,7 @@
     z-index:1 ;
   }
   .navbar-text h1{
-    text-align:center;color:white;font-size:5vw !important;font-family: "Bebas Neue", Sans-serif;letter-spacing: 20px; 
+    text-align:center;color:white;font-size:3vw !important;font-family: "Bebas Neue", Sans-serif;letter-spacing: 20px; 
     animation: slidein 5s ;margin-top: 0;margin-bottom: 0;
   }
   
@@ -46,7 +46,7 @@
     width: 100%;
     height: auto;
   }
-  .left, .center{
+  .left, .center, .right{
     padding:15px !important;
   }
   
@@ -179,8 +179,11 @@
 
 .asideMargin{
   text-align: left;
+  margin-left: 1px;
+
   
 }
+
 .asideMargin i, .asideMargin h4{
   display:inline-block;
  }

@@ -101,6 +101,7 @@ html,body {
     margin:auto;
      width:95%;
   }
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -141,6 +142,7 @@ html,body {
     align-items: center;
     justify-content: center; 
   }
+
 }
 
 /* Medium Devices, Desktops */
@@ -157,6 +159,9 @@ html,body {
   .col-l-10 {width: 83.33%;}
   .col-l-11 {width: 91.66%;}
   .col-l-12 {width: 100%;}
+
+  
+  
 }
 
 /* Large Devices, Wide Screens */
@@ -167,6 +172,7 @@ html,body {
      margin:auto;
      width:80%;
   }
+  
 }
 
 
