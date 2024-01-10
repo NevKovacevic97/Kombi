@@ -108,7 +108,7 @@ html,body {
    
   }
   
-
+ 
   @media only screen and (min-width: 320px) {
     .col-ph-1 {width: 8.33%;}
     .col-ph-2 {width: 16.66%;}
