@@ -54,7 +54,7 @@ html,body {
   
   .header {
     text-align: center;
-    padding: 32px;
+    padding: 25px;
   }
   
   .row {
@@ -124,6 +124,7 @@ html,body {
 
   
 }
+
 /*
 @media screen and (orientation:landscape) { 
   #FullView{
@@ -344,3 +345,12 @@ html,body {
     .col-l-12 {width: 100%;}
    
   }
+
+  @media screen and (max-width: 480px) { 
+
+    .linksGallery img{
+     width:30px !important; 
+     height:auto !important;
+    }
+   }
+  
