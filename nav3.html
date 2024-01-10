@@ -26,7 +26,29 @@
       
 
  <script>
+   const hamburger=document.getElementById('hamburg');
+ menu=document.getElementById('nav-list');
+  hamburger.addEventListener('click',function(){
+    
  
+    if(menu.style.display=='none'){
+  
+      menu.style.display='block';
+ 
+    }
+   else{
+ 
+      menu.style.display='none';
+  
+   }
+  
+
+  
+
+ })
+
+
+ /*
  const hamburger=document.getElementById('hamburg');
  menu=document.getElementById('nav-list');
 
@@ -37,23 +59,25 @@
  
  hamburger.addEventListener('click',function(){
     
-     
-     if(menu.style.display=='none'){
+ 
+       if(menu.style.display=='none'){
      
          menu.style.display='block';
     
-    }
-    else{
+       }
+      else{
     
          menu.style.display='none';
      
-    }
+      }
 
-   })
-
+    })
+  
   }
+  
 else{
-    menu.style.display='flex';  
+    menu.style.display='flex'; 
+    
 }
 
 }
@@ -62,13 +86,15 @@ else{
 var x = window.matchMedia("(max-width: 1024px)")
 
 // Call listener function at run time
+
 myFunction(x);
+
 
 // Attach listener function on state changes
 x.addEventListener("change", function() {
   myFunction(x);
 });
-
+*/
  </script>
  
  
@@ -111,11 +137,16 @@ x.addEventListener("change", function() {
   margin: 4px 2px;
   cursor: pointer;
 }
+@media only screen and (min-width: 1025px){
+ .nav-list{
+  display:flex !important;
+ }
 
+}
  .nav-list{
     /* font-family:'SimSun'; */
      list-style: none;
-     display: flex;
+   /*  display: flex; */
     background-image: inherit;
      margin:0px;
      padding:2px;
@@ -142,7 +173,7 @@ x.addEventListener("change", function() {
          
      }
      .nav-list{
-         display: none;
+       display: none; 
          width:100%;
         /* height:fit-content; */
          top:80px; 
@@ -152,13 +183,14 @@ x.addEventListener("change", function() {
          background-color: black;
          
      }
-
+  
       .hamburg:hover .nav-list {
          
          display:block;
          
      
      }
+     
      .nav-items{
         color:white !important;
         font-size: 16px !important;
