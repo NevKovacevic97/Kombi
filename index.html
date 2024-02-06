@@ -54,6 +54,40 @@
     "url": "https://www.kombiselidbeimperia.com/"
   }
   </script>
+
+
+  <script>
+    var el = document.createElement('script');
+    el.type = 'application/ld+json';
+    el.text = JSON.stringify({
+      "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Kombi prevoz i selidbe - Imperia",
+    "image": "https://www.kombiselidbeimperia.com/images/slika38.jpg",
+    "telephone": [
+      "+381693743088",
+      "+381693743188"
+    ],
+    "email": "imperiatransportsrb@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kragujevac",
+      "addressCountry": "Srbija",
+      "postalCode": "34000"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": {
+        "@type": "DayOfWeek",
+        "name": "Monday, Tuesday, Wednesday, Thursday,  Friday,  Saturday, Sunday"
+      },
+      "opens": "00:00:00",
+      "closes": "23:59:00"
+    },
+    "url": "https://www.kombiselidbeimperia.com/"
+    });
+    document.querySelector('body').appendChild(el);
+  </script>
    <style>
   
    body, html{
